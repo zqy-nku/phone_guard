@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/warning_bg_iv"
+        android:layout_width="400dp"
+        android:layout_height="500dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/warning_msg_tv"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF7F24"
+            android:textStyle= "bold"
+            android:textSize="20sp"
+            android:text="Attention Please！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/add_to_list_bt"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:text="Add into blacklist"
+                android:background="@drawable/color_gray_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ack_bt"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:text="OK"
+                android:background="@drawable/color_gray_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

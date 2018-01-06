@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+    android:orientation="vertical">
+   <TextView
+       android:text="Add Phone Number"
+       android:textColor="#000"
+       android:padding="10dp"
+       android:gravity="center"
+       android:textSize="20sp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/input_et"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Please enter a phone number"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/color_gray_buttom"
+            android:id="@+id/cancle_bt"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/color_gray_buttom"
+            android:id="@+id/ack_bt"
+            android:text="Ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+</LinearLayout>
